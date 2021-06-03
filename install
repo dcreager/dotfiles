@@ -7,6 +7,9 @@ rm -rf .oh-my-bash
 rm -rf .oh-my-zsh
 rm .zshrc
 
+# A bit of a hack
+mv .gitconfig .gitconfig.private
+
 git clone https://github.com/dcreager/dotfiles-base .dotfiles.base
 git clone https://github.com/dcreager/dotfiles-public -b linux .dotfiles.public
 $HOME/.dotfiles.base/bin/dotfiles.symlink install
