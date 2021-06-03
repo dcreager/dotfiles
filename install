@@ -17,3 +17,8 @@ $HOME/.dotfiles.base/bin/dotfiles.symlink install
 # I'd like to use fish, please
 apt-get install -y fish
 chsh -s /usr/bin/fish
+
+# Some other stuff I typically need
+apt-get install -y libfuse2 fzf
+curl -L -o $HOME/bin/nvim https://github.com/neovim/neovim/releases/download/v0.4.4/nvim.appimage
+chmod a+x $HOME/bin/nvim
