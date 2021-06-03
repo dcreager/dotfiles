@@ -1,6 +1,16 @@
 #!/bin/sh
 
 cd $HOME
+
+# No thank you
+rm -rf .oh-my-bash
+rm -rf .oh-my-zsh
+rm .zshrc
+
 git clone https://github.com/dcreager/dotfiles-base .dotfiles.base
 git clone https://github.com/dcreager/dotfiles-public -b linux .dotfiles.public
 $HOME/.dotfiles.base/bin/dotfiles.symlink install
+
+# I'd like to use fish, please
+apt-get install -y fish
+chsh -s /usr/bin/fish
