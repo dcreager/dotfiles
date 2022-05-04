@@ -19,7 +19,8 @@ apt-get install -y fish
 chsh -s /usr/bin/fish
 
 # Install fzf
-curl -L https://github.com/junegunn/fzf/releases/download/0.27.2/fzf-0.27.2-linux_amd64.tar.gz | tar xzC $HOME/bin
+FZF_VERSION=0.30.0
+curl -L https://github.com/junegunn/fzf/releases/download/${FZF_VERSION}/fzf-${FZF_VERSION}-linux_amd64.tar.gz | tar xzC $HOME/bin
 
 # Install neovim
 apt-get install -y libfuse2
