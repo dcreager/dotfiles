@@ -2,6 +2,9 @@
 
 cd $HOME
 
+# Make passwordless sudo work
+export SUDO_ASKPASS=/bin/true
+
 # No thank you
 rm -rf .oh-my-bash
 rm -rf .oh-my-zsh
