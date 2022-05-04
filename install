@@ -1,5 +1,12 @@
 #!/bin/sh
 
+echo >&2 "====================================================================="
+echo >&2 " Setting up codespaces environment"
+echo >&2 ""
+echo >&2 " USER        $USER"
+echo >&2 " HOME        $HOME"
+echo >&2 "====================================================================="
+
 cd $HOME
 
 # Make passwordless sudo work
