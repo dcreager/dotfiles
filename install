@@ -16,7 +16,7 @@ $HOME/.dotfiles.base/bin/dotfiles.symlink install
 
 # I'd like to use fish, please
 apt-get install -y fish
-chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish $USER
 
 # Install fzf
 FZF_VERSION=0.30.0
