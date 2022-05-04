@@ -18,7 +18,7 @@ git clone https://github.com/dcreager/dotfiles-public -b codespaces --recurse-su
 $HOME/.dotfiles.base/bin/dotfiles.symlink install
 
 # I'd like to use fish, please
-apt-get install -y fish
+sudo apt-get install -y fish
 sudo chsh -s /usr/bin/fish $USER
 
 # Install fzf
@@ -27,6 +27,6 @@ curl -L https://github.com/junegunn/fzf/releases/download/${FZF_VERSION}/fzf-${F
 
 # Install neovim
 NVIM_VERSION=0.7.0
-apt-get install -y libfuse2
+sudo apt-get install -y libfuse2
 curl -L -o $HOME/bin/nvim https://github.com/neovim/neovim/releases/download/v${NVIM_VERSION}/nvim.appimage
 chmod a+x $HOME/bin/nvim
